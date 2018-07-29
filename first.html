@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart school</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<header><h1>Smart E-School Management And Bus Tracking Application </h1></header>
+<style>
+h1{
+color:blue;
+margin-left:225px;  
+}
+body {margin:0;
+	background-image: url("assets/img/a2.jpg");
+	  background-repeat: no-repeat,repeat;
+}
+table
+ {
+ display: block;
+    color: white;
+    text-align: center;
+    margin-top:30px;
+	align:center;
+	margin-left:550px;
+    text-decoration:none;
+ 
+ }
+footer{
+	color:black;
+	font-family: Verdana,sans-serif;
+   font-size: 200%;
+   background-image:transparent;
+   padding: 30px;
+   text-align: center;
+}
+
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+   margin-top: 05px;
+    margin-bottom: 100px;
+    margin-right: 400px;
+    margin-left: 400px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font:italic;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+ </div>
+<table  align="center">
+
+<tr>
+<td colspan=2><center><font size=4><b>Login</b></font></center></td>
+</tr>
+
+<tr>
+<td>Username</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><input type="Reset"></td>
+<td><input type=button onClick="location.href='index.html'" value='Login'></td>
+</tr>
+
+</table>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="assets/img/a11.jpg" style="width:100%">
+  <div class="text">Study time</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="assets/img/a12.jpg" style="width:100%">
+  <div class="text">tree plantation to save earth</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="assets/img/a14.jpg" style="width:100%">
+  <div class="text">make champion</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+<footer>
+<img src="a15.jpg" style="width:100%" >
+</footer>
+</body>
+</html>
